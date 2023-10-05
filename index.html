@@ -3,63 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4Food</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+   
     <script src="script.js" defer></script>
 </head>
-
 <body>
-  <div class="container">
+    
+    <section class="container">
+        
+        <header class="box box-1">
+            <a href="#" class="logo">4Foods</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <ul class="navbar">
+                <a href="#" class="li"><li>Home</li></a>
+                <a href="#" class="li"><li>About</li></a>
+                <a href="#" class="li"><li>Contact</li></a>
+            </ul>
+            <label for="nav-toggle" class="menu">
+                <span><img src="logo/Hamburgerzzz.jpg" alt="hambergermenu"></span>
+            </label>
 
-  <header class="box-1">
-    <a href="#" class="logo"><img class="logo" src="images/4food.png" alt="brand-logo"></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <ul class="navbar">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-    <label for="nav-toggle" class="menu">
-        <span><img src="images/hamburger-menu.png.jpg" alt="hambergermenu" height="50" width="50"></span>
-    </label>
-</header>
+        </header>
+            <div class="box box-2"><img src="" alt="groceries"></div> 
+            <aside class="box box-3">Aside (3)</aside>
+            <div class=" box box-4">Extra (4)</div>
+        <footer class="box box-5">Footer (5)</footer>
 
-<main class="box-2">Main (2)
-    <h3>4Food Supermarkets</h3>
-    <h1>Shop Online</h1>
-    <h2>Delivered to your door</h2>
-    <img class="groceries" src="images/main-image.webp" alt="groceries">
-</main>
-
-<aside class="box-3">Aside (3)
-  <h1>Registration Form</h1>
-  <fieldset>
-    <label for="full-name">Enter Your Full Name: 
-      <input id="full-name" name="full-name" type="text" required />
-    </label>
-    <label for="email">Enter Your Email: 
-      <input id="email" name="email" type="email" required />
-    </label>  
-    <label for="phone">Enter Your Phone Number: 
-      <input id="number" name="number" type="tell" required />
-    </label>  
-    <label for="terms-and-conditions">
-      <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="#">terms and conditions</a>
-    </label>
-    <label for="button">
-      <button id="submit" type="submit">Submit</button>
-    </label>
-    </fieldset>
-</aside>
-
-<footer class="box-4">Footer (4)
-  <div id="icons">
-  <img class="facebook" src="images/facebook.png" alt="facebook">
-  <img class="instagram" src="images/instagram.png" alt="instagram">
-  <img class="whatsapp" src="images/whatsapp.png" alt="whatsapp">
-  </div>
-</footer>
-</div>
-</body>
+    </section>
+    </body>
 </html>
