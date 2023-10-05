@@ -1,39 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <title>Responsive Nav Bar</title>
+    <link href="styles.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
-   
+
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    
-    <section class="container">
-        
-        <header class="box box-1">
-            <a href="#" class="logo">4Foods</a>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <ul class="navbar">
-                <a href="#" class="li"><li>Home</li></a>
-                <a href="#" class="li"><li>About</li></a>
-                <a href="#" class="li"><li>Contact</li></a>
+    <header>
+        <div class="logo">4Foods</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#extra" class="about">About</a></li>
+                <li><a href="#footer" class="contact">Contact</a></li>
+                <li id="click"><a href="#" class="extra">Click Me</a></li>
             </ul>
-            <label for="nav-toggle" class="menu">
-                <span><img src="logo/Hamburgerzzz.jpg" alt="hambergermenu"></span>
-            </label>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div id="purple" class="box box-1"></div>
+            <div class="column"></div>
+            
+            <div id="main" class="box box-2">
+                <h1 id="maintext" style="font-size:2.5vw;">The Best Online Supermarket</h1>
+                <p id="subtext" style="font-size:2vw;">Delivery to your door</p>
+                <img class="mainpic" src="images/main-image.webp" alt="mainimage">
+            </div>        
+            <aside id="aside" class="box box-3">
+            <form class="form" action="">
+                <h1>Registration Form</h1>
+                <label for="full-name">Enter Your Full Name:
+                    <input class="input-box" id="full-name" name="full-name" type="text" required />
+                </label>
+                <label for="email">Enter Your Email:
+                    <input class="input-box" id="email" name="email" type="email" required />
+                </label>
+                <label for="phone">Enter Your Phone Number:
+                    <input class="input-box" id="number" name="number" type="tell" required />
+                </label>
+                <label for="terms-and-conditions">
+                    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions"
+                        class="inline" /> I accept the <a href="#">terms and conditions</a>
+                </label>
+                <label for="clear">
+                    <input id="cleartext" onclick="clearInput(event)" type="submit" value="Submit" />
+                    <div class="popup" id="popup">
+                        <img src="images/tick.png.webp" alt="green-tick">
+                        <h2>Thank You!</h2>
+                        <p>Your details have been sucessfully submitted. Please check your email for further instructions</p>
+                        <button type="button" onclick="closePopup()">Ok</button>
+                    </div>
+                </label>
+            </form>
+            </aside>
 
-        </header>
-            <div class="box box-2"><img src="" alt="groceries"></div> 
-            <aside class="box box-3">Aside (3)</aside>
-            <div class=" box box-4">Extra (4)</div>
-        <footer class="box box-5">Footer (5)</footer>
+            <div id="extra" class="box box-4"><p id="extratext">4Foods takes the <i><strong>hassle</strong></i> out of shopping. Simply access our site online and select from our vast menu of products, pay by card and one of our dedicated staff will assemble your order ready for dispatch. Delivery to your door guaranteed within 2 hours of purchase. Don´t waste one more second standing in line at the supermarket.<br>Register NOW!</p></div>
+            <footer id="footer" class="box box-5">
+                <div class="socialmedia">
+                    <a href="https://www.facebook.com/signup" class="socialmedia"><img class="facebook" src="images/facebook .png"
+                            alt="facebook"></a>
+                    <a href="https://business.instagram.com/getting-started" class="socialmedia"><img class="instagram" src="images/instagarm.png"
+                            alt="instagram"></a>
+                    <a href="https://www.whatsapp.com/?lang=pt_br" class="socialmedia"><img class="whatsapp" src="images/whatsapp.png" alt="whatsapp">
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
 
-    </section>
-    </body>
 </html>
