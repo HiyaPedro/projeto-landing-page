@@ -1,7 +1,7 @@
 # 4Foods Landing Page
 (My first programming project!)
 
-A landing page designed to attract clients interesed in registering their details inorder to access an online shopping site. 4Foods assembles the clients order and delivers to their door.
+A landing page designed to attract clients interesed in registering their details inorder to access an online shopping site. 4Foods assembles the clients order and delivers to their door. This isn´t the supermarket site. It´s just a "first-contact" page. 
 
 ## Programming principles utilised
 * HTML
